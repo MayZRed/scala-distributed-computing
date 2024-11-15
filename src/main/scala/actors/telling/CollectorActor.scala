@@ -1,4 +1,4 @@
-package actors
+package actors.telling
 
 import akka.actor.typed.Behavior
 import akka.actor.typed.scaladsl.Behaviors
@@ -13,7 +13,7 @@ object CollectorActor {
   // message for shutting down the actor system
   case object FinishMsg extends CollectorMsg
 
-  // adapt public method to secure the ArrayBuffer is initialized empty
+  // adapt public method to ensure the Collector is initialized empty
   def apply(): Behavior[CollectorMsg] = internalFunction(ArrayBuffer.empty)
 
   private def internalFunction(primes: ArrayBuffer[Int]): Behavior[CollectorMsg] =

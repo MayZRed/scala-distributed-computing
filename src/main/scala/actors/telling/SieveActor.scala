@@ -1,8 +1,8 @@
-package actors
+package actors.telling
 
-import actors.CollectorActor.{CollectMsg, CollectorMsg, FinishMsg}
-import akka.actor.typed.{ActorRef, Behavior}
+import CollectorActor.{CollectMsg, CollectorMsg, FinishMsg}
 import akka.actor.typed.scaladsl.Behaviors
+import akka.actor.typed.{ActorRef, Behavior}
 
 object SieveActor {
 

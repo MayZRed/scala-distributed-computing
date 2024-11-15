@@ -1,6 +1,6 @@
-package actors
+package actors.telling
 
-import actors.SieveActor.NumListMsg
+import SieveActor.NumListMsg
 import akka.actor.typed.ActorSystem
 
 @main
